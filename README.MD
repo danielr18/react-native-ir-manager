@@ -38,13 +38,7 @@ Most of the devices in this [list](https://en.wikipedia.org/wiki/List_of_devices
 
 ## Usage
 
-```js
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
+```jsx
 import React, { Component } from 'react';
 import {
   AppRegistry,
