@@ -1,0 +1,33 @@
+{
+  "name": "react-native-ir-manager",
+  "version": "0.0.1",
+  "description": "A react-native interface for using the IR transmitter in Android smartphones",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com:danielr18/react-native-ir-manager.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "android",
+    "infrared",
+    "ir-emitter",
+    "ir-blaster"
+  ],
+  "author": "Daniel Reinoso <danielreinoso1807@gmail.com> (http://kloc.io)",
+  "license": "MIT",
+  "rnpm": {
+    "commands": {
+      "postlink": "node_modules/react-native-ir-manager/scripts/post-link.sh"
+    }
+  },
+  "peerDependencies": {
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.7.1",
+    "eslint-config-tipsi": "^12.0.0"
+  }
+}
