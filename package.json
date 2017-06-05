@@ -1,8 +1,8 @@
 {
   "name": "react-native-ir-manager",
-  "version": "0.0.2",
-  "description": "A react-native interface for using the IR transmitter in Android smartphones",
-  "main": "./src/index.js",
+  "version": "0.0.4",
+  "description": "A react-native interface for using the Infrared (IR) transmitter in Android smartphones",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/danielr18/react-native-ir-manager.git"
