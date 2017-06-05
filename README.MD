@@ -1,6 +1,6 @@
 # react-native-ir-manager
 
-A react-native interface for using the IR transmitter in Android smartphones with [ConsumerIRManager](https://developer.android.com/reference/android/hardware/ConsumerIrManager.html). 
+A react-native interface for using the Infrared (IR) transmitter in Android smartphones with [ConsumerIRManager](https://developer.android.com/reference/android/hardware/ConsumerIrManager.html). 
 
 ## Getting started
 
@@ -83,10 +83,10 @@ export default class RNIRTest extends Component {
 AppRegistry.registerComponent('RNIRTest', () => RNIRTest);
 ```
 
-### hasIrEmitter
+### hasIrEmitter()
 Check whether the device has an infrared emitter. Promise returns a boolean.
 
-### getCarrierFrequencies
+### getCarrierFrequencies()
 Query the infrared transmitter's supported carrier frequencies. Returns an Array of Objects with the minimun and maximum frequency (inclusive) on which the infrared emitters can transmit  
 
 ### transmit(carrierFrequency : Number, pattern : [Number])
