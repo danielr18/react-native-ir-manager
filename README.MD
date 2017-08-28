@@ -90,10 +90,10 @@ Check whether the device has an infrared emitter. Promise returns a boolean.
 Query the infrared transmitter's supported carrier frequencies. Returns an Array of Objects with the minimun and maximum frequency (inclusive) on which the infrared emitters can transmit  
 
 ### transmit(carrierFrequency : Number, pattern : [Number])
-Transmit an infrared pattern. Promise returns a `true` value if it gets transmitter.
+Transmit an infrared pattern. Promise returns a `true` value if it gets transmitted.
 
 ### transmitProntoCode(prontoHexCode : String)
-Converts a Pronto Hex Code commonly found online to an infrared pattern, which is then transmitter. Promise returns a `true` value if it gets transmitter.
+Converts a Pronto Hex Code commonly found online to an infrared pattern, which is then transmitted. Promise returns a `true` value if it gets transmitted.
 
 ## Credits
 
