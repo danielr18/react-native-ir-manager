@@ -10,30 +10,28 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import android.hardware.ConsumerIrManager;
 import android.hardware.ConsumerIrManager.CarrierFrequencyRange;
+import com.facebook.react.bridge.Callback;
 
 import static android.content.Context.CONSUMER_IR_SERVICE;
 
 public class RNIRManagerModule extends ReactContextBaseJavaModule {
 
-  private static final String MODULE_NAME = "RNIRManagerModule";
-  private final ConsumerIrManager manager;
+    private static final String MODULE_NAME = "RNIRManagerModule";
+    private final ConsumerIrManager manager;
+    private final ReactApplicationContext reactContext;
 
-  public RNIRManagerModule(ReactApplicationContext reactContext) {
-    super(reactContext);
-    manager = (ConsumerIrManager) reactContext.getSystemService(CONSUMER_IR_SERVICE);
-  }
-
-  @Override
-  public String getName() {
-    return MODULE_NAME;
-  }
-
-    @ReactMethod
-    public void hasIrEmitter(Promise promise) {
-        promise.resolve(manager.hasIrEmitter());
+    public RNIRManagerModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+        manager = (ConsumerIrManager) reactContext.getSystemService(CONSUMER_IR_SERVICE);
     }
 
-    @ReactMethod
+    @Override
+    public String getName() {
+        return MODULE_NAME;
+    }
+
+@ReactMethod
     public void getCarrierFrequencies(Promise promise) {
         try {
             CarrierFrequencyRange[] carrierFrequencyRanges = manager.getCarrierFrequencies();
