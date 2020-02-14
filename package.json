@@ -1,25 +1,16 @@
 {
   "name": "react-native-ir-manager",
   "title": "React Native Ir Manager",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "A react-native interface for using the Infrared (IR) transmitter in Android smartphones",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
-  "peerDependencies": {
-    "react": "^16.8.1",
-    "react-native": ">=0.60.0-rc.0 <1.0.x"
-  },
-  "devDependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.61.5"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielr18/react-native-ir-manager.git"
+    "url": "git+https://github.com/danielr18/react-native-ir-manager.git",
+    "baseUrl": "https://github.com/danielr18/react-native-ir-manager.git"
   },
   "keywords": [
     "react-native",
@@ -29,5 +20,19 @@
     "ir-emitter",
     "ir-blaster"
   ],
-  "author": "Daniel Reinoso <danielreinoso1807@gmail.com> (http://kloc.io)",
+  "author": {
+    "name": "Daniel Reinoso",
+    "email": "danielreinoso1807@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  }
 }
