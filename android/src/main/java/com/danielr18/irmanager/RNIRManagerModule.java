@@ -31,7 +31,12 @@ public class RNIRManagerModule extends ReactContextBaseJavaModule {
         return MODULE_NAME;
     }
 
-@ReactMethod
+    @ReactMethod
+    public void hasIrEmitter(Promise promise) {
+      promise.resolve(manager.hasIrEmitter());
+    }
+
+    @ReactMethod
     public void getCarrierFrequencies(Promise promise) {
         try {
             CarrierFrequencyRange[] carrierFrequencyRanges = manager.getCarrierFrequencies();
