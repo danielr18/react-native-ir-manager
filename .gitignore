@@ -2,6 +2,15 @@
 #
 .DS_Store
 
+<<<<<<< HEAD
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+=======
+>>>>>>> 8f7a471b5ebca0fb2b06a05e970403a9b256a189
 # Xcode
 #
 build/
@@ -21,6 +30,21 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+<<<<<<< HEAD
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+=======
 Podfile.lock
 Pods/
 
@@ -75,3 +99,4 @@ npm-debug.log
 
 tmp
 example_tmp
+>>>>>>> 8f7a471b5ebca0fb2b06a05e970403a9b256a189
