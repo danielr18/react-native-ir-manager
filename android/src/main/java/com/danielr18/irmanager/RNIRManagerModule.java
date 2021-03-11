@@ -23,7 +23,6 @@ public class RNIRManagerModule extends ReactContextBaseJavaModule {
     manager = (ConsumerIrManager) reactContext.getSystemService(CONSUMER_IR_SERVICE);
   }
 
-  @Override
   public String getName() {
     return MODULE_NAME;
   }
