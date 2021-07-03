@@ -33,7 +33,7 @@ or
 
 ## Supported Devices List
 
-Most of the devices in this [list](https://en.wikipedia.org/wiki/List_of_devices_with_IR_blaster#Smartphones) should be supported.
+Check the documentation of your product to see if it has an IR blaster.
 
 
 ## Usage
